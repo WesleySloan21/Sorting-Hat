@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Pick App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Draft Pick App</h1>
+        
+        <div class="team-creation">
+            <h2>Create Teams</h2>
+            <input type="text" id="teamName" placeholder="Enter team name">
+            <button id="addTeam">Add Team</button>
+        </div>
+
+        <div class="participant-adding">
+            <h2>Add Participants</h2>
+            <input type="text" id="participantName" placeholder="Enter participant's name">
+            <button id="addParticipant">Add Participant</button>
+        </div>
+
+        <div class="draft-section">
+            <h2>Start Draft</h2>
+            <div id="requirements" class="requirements-message">
+                <em>At least 2 teams and 2 participants are required to start the draft.</em>
+            </div>
+            <button id="startDraft">Start Draft</button>
+        </div>
+
+        <div id="draftProgress" style="display:none; margin-top:20px;">
+            <div id="draftStatus"></div>
+            <button id="nextPickBtn">Next Pick</button>
+            <button id="restartDraftBtn" style="margin-left:10px;">Restart Draft</button>
+        </div>
+
+        <div class="teams-display">
+            <h2>Teams</h2>
+            <ul id="teamsList"></ul>
+        </div>
+
+        <div class="participants-display">
+            <h2>Participants</h2>
+            <ul id="participantsList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

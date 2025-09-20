@@ -1,0 +1,21 @@
+{
+  "name": "draft-pick-app",
+  "version": "1.0.0",
+  "description": "A web application for creating teams and conducting a draft pick.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "draft",
+    "team",
+    "pick",
+    "app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
